@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d" FontSize="18"
-        Title="MainWindow" Height="600" Width="600">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="20"/>
@@ -24,12 +24,15 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="171*"/>
+            <RowDefinition Height="928*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="30" Grid.ColumnSpan="3" Margin="20">First program WPF</TextBlock>
         
+        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="30" Grid.ColumnSpan="2" Margin="20,20,3,20">First program WPF</TextBlock>
+
         <TextBlock Grid.Column="1" Grid.Row="2" FontWeight="SemiBold" Text="First name" FontFamily="Segio UI"></TextBlock>
-        <TextBox x:Name="firstNameText" Grid.Column="2" Grid.Row="2" Width="150" Height="30"></TextBox>
+        <TextBox x:Name="firstNameText" Grid.Column="2" Grid.Row="2" Width="150" Height="30" Margin="8,0,9,0"></TextBox>
+        <Button Content="close" Grid.Column="4" HorizontalAlignment="Left" Margin="323.5,181,0,0" Grid.Row="7" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
     </Grid>
 </Window>
